@@ -6,7 +6,8 @@ import (
 
 	"github.com/shirou/gopsutil/net"
 )
-
+var lastTime time.Time
+var lastSent uint64
 func GetNetworkSpeed() (float64, error) {
 	netIO, err := net.IOCounters(true)
 	if err != nil {
