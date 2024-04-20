@@ -25,7 +25,7 @@ func PrintSystemInfo() {
 	if err != nil {
 		fmt.Printf("Failed to get CPU usage: %v\n", err)
 	} else {
-		fmt.Printf("CPU Usage: %s%.2f%%%s\n", ColorRed, cpuPercent[0], ColorReset)
+		fmt.Printf("CPU Usage: %s%.2f%%%s\n", utils.ColorRed, cpuPercent[0], utils.ColorReset)
 	}
 
 	// Get memory usage
@@ -33,7 +33,7 @@ func PrintSystemInfo() {
 	if err != nil {
 		fmt.Printf("Failed to get memory info: %v\n", err)
 	} else {
-		fmt.Printf("Memory Usage: %s%.2f%%%s\n", ColorRed, memInfo.UsedPercent, ColorReset)
+		fmt.Printf("Memory Usage: %s%.2f%%%s\n", utils.ColorRed, memInfo.UsedPercent, utils.ColorReset)
 	}
 
 	// Get network upload speed
@@ -41,6 +41,6 @@ func PrintSystemInfo() {
 	if err != nil {
 		fmt.Printf("Failed to get network speed: %v\n", err)
 	} else {
-		fmt.Printf("Network Sent Speed: %s%.2f Mbps%s\n", ColorRed, netSpeed, ColorReset)
+		fmt.Printf("Network Sent Speed: %s%.2f Mbps%s\n", utils.ColorRed, netSpeed, utils.ColorReset)
 	}
 }
