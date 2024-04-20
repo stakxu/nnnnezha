@@ -4,10 +4,8 @@ package server
 import (
 	"context"
 	"fmt"
-	"log"
 
-	"github.com/nezhahq/agent/proto"
-	"google.golang.org/grpc"
+	"github.com/nezhahq/agent/proto
 	"google.golang.org/grpc/metadata"
 )
 
