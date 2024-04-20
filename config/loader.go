@@ -4,9 +4,9 @@ package config
 import (
 	"encoding/json"
 	"fmt"
-	"log"
 	"os"
-	"path/filepath"
+	
+	"github.com/nezhahq/agent/proto"
 )
 
 type Config struct {
